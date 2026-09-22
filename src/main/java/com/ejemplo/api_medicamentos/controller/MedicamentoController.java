@@ -19,6 +19,7 @@ public class MedicamentoController {
 
     @GetMapping
     public List<Medicamento> listar() {
+        System.out.println("Va a listar");
         return service.listar();
     }
 
