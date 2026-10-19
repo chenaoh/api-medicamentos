@@ -17,6 +17,11 @@ public class MedicamentoController {
         this.service = service;
     }
 
+    @GetMapping("saludo")
+    public String pruebaAPI() {
+        return "Este es el nuevo cambio desde nuestra API";
+    }
+
     @GetMapping
     public List<Medicamento> listar() {
         System.out.println("Va a listar");
