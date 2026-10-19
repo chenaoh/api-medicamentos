@@ -19,13 +19,15 @@ public class CorsConfig {
                 registry.addMapping("/api/**")
                         .allowedOrigins(
                                 "http://localhost:5500",
-                                "http://127.0.0.1:5500"
+                                "http://127.0.0.1:5500",
+                                "https://frontend-medicamentos-ebon.vercel.app" // <-- URL de producción en Vercel
                         )
                         .allowedMethods(
                                 "GET",
                                 "POST",
                                 "PUT",
-                                "DELETE"
+                                "DELETE",
+                                "OPTIONS" // <-- Se recomienda incluir OPTIONS para peticiones preflight
                         )
                         .allowedHeaders("*");
             }
