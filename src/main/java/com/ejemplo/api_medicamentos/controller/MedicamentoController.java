@@ -19,7 +19,7 @@ public class MedicamentoController {
 
     @GetMapping("saludo")
     public String pruebaAPI() {
-        return "Este es el nuevo cambio desde nuestra API"
+        return "Este es el nuevo cambio desde nuestra API";
     }
 
     @GetMapping
